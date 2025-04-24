@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <modelVersion>4.0.0</modelVersion>
+                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <groupId>com.simplifyqa.codeeditor</groupId>
+                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <artifactId>Sandbox</artifactId>
+                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <version>1.0-SNAPSHOT</version>
+                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <properties>
+                                                                                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <maven.compiler.source>17</maven.compiler.source>
+                                                                                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <maven.compiler.target>17</maven.compiler.target>
+                                                                                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+                                                                                                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </properties>
+                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dependencies>
+                                                                                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <dependency>
+                                                                                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <groupId>junit</groupId>
+                                                                                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <artifactId>junit</artifactId>
+                                                                                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <version>3.8.1</version>
+                                                                                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <scope>test</scope>
+                                                                                                                                                                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </dependency>
+                                                                                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <dependency>
+                                                                                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <groupId>org.projectlombok</groupId>
+                                                                                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <artifactId>lombok</artifactId>
+                                                                                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <version>1.18.34</version>
+                                                                                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <scope>provided</scope>
+                                                                                                                                                                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </dependency>
+                                                                                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <dependency>
+                                                                                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <groupId>org.apache.logging.log4j</groupId>
+                                                                                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <artifactId>log4j-api</artifactId>
+                                                                                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <version>2.14.1</version>
+                                                                                                                                                                                                                                                            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <scope>provided</scope>
+                                                                                                                                                                                                                                                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </dependency>
+                                                                                                                                                                        
+        
+        
+                    
+        
+        
+        
+        
+                            
+        
+        
+        
+        
+                            
+        
+        
+        
+        
+                            
+    
+        
+        
+        
+        
+                            
+        
+        
+        
+        
+                            
+        
+        
+        
+        
+                            
+    
+        
+        
+        
+        
+                            
+        
+        
+        
+        
+                            
+        
+        
+        
+        
+                            
+    
+        
+        
+        
+        
+                            
+        
+        
+        
+        
+                            
+        
+        
+        
+        
+                            
+    
+        
+        
+        
+        <dependency>
+                                                
+            
+            
+            <groupId>com.simplifyqa.base</groupId>
+                                                
+            
+            
+            <artifactId>abstracted-base</artifactId>
+                                                
+            
+            
+            <version>1.0</version>
+                                            
+        
+        
+        </dependency>
+                            
+        
+        
+        <dependency>
+                                    
+            
+            <groupId>com.simplifyqa.abstract</groupId>
+                                    
+            
+            <artifactId>abstracted-interfaces</artifactId>
+                                    
+            
+            <version>1.0</version>
+                                    
+            
+            <scope>provided</scope>
+                                
+        
+        </dependency>
+                    
+        
+        <dependency>
+                        
+            <groupId>commons-io</groupId>
+                        
+            <artifactId>commons-io</artifactId>
+                        
+            <version>2.18.0</version>
+                    
+        </dependency>
+            
+    </dependencies>
+                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <build>
+                
+        <plugins>
+                        
+            <plugin>
+                                
+                <groupId>org.apache.maven.plugins</groupId>
+                                
+                <artifactId>maven-assembly-plugin</artifactId>
+                                
+                <version>3.3.0</version>
+                                
+                <configuration>
+                                        
+                    <descriptorRefs>
+                                                
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                                            
+                    </descriptorRefs>
+                                    
+                </configuration>
+                                
+                <executions>
+                                        
+                    <execution>
+                                                
+                        <id>make-assembly</id>
+                                                
+                        <phase>package</phase>
+                                                
+                        <goals>
+                                                        
+                            <goal>single</goal>
+                                                    
+                        </goals>
+                                            
+                    </execution>
+                                    
+                </executions>
+                            
+            </plugin>
+                        
+            <plugin>
+                                
+                <groupId>org.apache.maven.plugins</groupId>
+                                
+                <artifactId>maven-compiler-plugin</artifactId>
+                                
+                <version>3.8.1</version>
+                                
+                <configuration>
+                                        
+                    <compilerArgs>
+                                                
+                        <arg>-parameters</arg>
+                                            
+                    </compilerArgs>
+                                    
+                </configuration>
+                            
+            </plugin>
+                    
+        </plugins>
+            
+    </build>
+                                                                                    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <profiles>
+                
+        <!-- Profile for DuplicateIdChecker -->
+                
+        <profile>
+                        
+            <id>duplicate-checker</id>
+                        
+            <build>
+                                
+                <plugins>
+                                        
+                    <plugin>
+                                                
+                        <groupId>org.codehaus.mojo</groupId>
+                                                
+                        <artifactId>exec-maven-plugin</artifactId>
+                                                
+                        <version>3.1.0</version>
+                                                
+                        <executions>
+                                                        
+                            <execution>
+                                                                
+                                <goals>
+                                                                        
+                                    <goal>java</goal>
+                                                                    
+                                </goals>
+                                                            
+                            </execution>
+                                                    
+                        </executions>
+                                                
+                        <configuration>
+                                                        
+                            <mainClass>com.simplifyqa.codeeditor.helper.DuplicateIdChecker</mainClass>
+                                                    
+                        </configuration>
+                                            
+                    </plugin>
+                                    
+                </plugins>
+                            
+            </build>
+                    
+        </profile>
+                
+        <!-- Profile for GitRelease -->
+                
+        <profile>
+                        
+            <id>git-release</id>
+                        
+            <build>
+                                
+                <plugins>
+                                        
+                    <plugin>
+                                                
+                        <groupId>org.codehaus.mojo</groupId>
+                                                
+                        <artifactId>exec-maven-plugin</artifactId>
+                                                
+                        <version>3.1.0</version>
+                                                
+                        <executions>
+                                                        
+                            <execution>
+                                                                
+                                <goals>
+                                                                        
+                                    <goal>java</goal>
+                                                                    
+                                </goals>
+                                                            
+                            </execution>
+                                                    
+                        </executions>
+                                                
+                        <configuration>
+                                                        
+                            <mainClass>com.simplifyqa.codeeditor.githandler.GitRelease</mainClass>
+                                                    
+                        </configuration>
+                                            
+                    </plugin>
+                                    
+                </plugins>
+                            
+            </build>
+                    
+        </profile>
+                
+        <!-- Profile for Sync -->
+                
+        <profile>
+                        
+            <id>sync</id>
+                        
+            <build>
+                                
+                <plugins>
+                                        
+                    <plugin>
+                                                
+                        <groupId>org.codehaus.mojo</groupId>
+                                                
+                        <artifactId>exec-maven-plugin</artifactId>
+                                                
+                        <version>3.1.0</version>
+                                                
+                        <executions>
+                                                        
+                            <execution>
+                                                                
+                                <goals>
+                                                                        
+                                    <goal>java</goal>
+                                                                    
+                                </goals>
+                                                            
+                            </execution>
+                                                    
+                        </executions>
+                                                
+                        <configuration>
+                                                        
+                            <mainClass>com.simplifyqa.codeeditor.githandler.SyncFromCodeEditor</mainClass>
+                                                    
+                        </configuration>
+                                            
+                    </plugin>
+                                    
+                </plugins>
+                            
+            </build>
+                    
+        </profile>
+            
+    </profiles>
+                                                                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</project>

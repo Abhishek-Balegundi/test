@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Listen Stream Compiler",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "${workspaceFolder}/src/main/java/com/simplifyqa/codeeditor/debugconsole/ListenStream.java"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Open Debug Console",
+      "type": "shell",
+      "command": "java",
+      "args": [
+        "-cp",
+        "${workspaceFolder}/src/main/java",
+        "com.simplifyqa.codeeditor.debugconsole.ListenStream"
+      ],
+      "problemMatcher": [],
+      "dependsOn": "Listen Stream Compiler"
+    }
+  ]
+}
